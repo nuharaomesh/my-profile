@@ -2,9 +2,17 @@ body {
     background-color: rgba(25, 25, 25, 1);
 }
 header>div {
-    width: 50vw;
+    width: 800px;
     height: 100px;
 
     background-color: rgba(204, 161, 94, 1);
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header>div>nav>a {
     color: white;
+    text-decoration: none;
 }
