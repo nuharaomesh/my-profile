@@ -1,3 +1,10 @@
 body {
     background-color: rgba(25, 25, 25, 1);
 }
+header>div {
+    width: 50vw;
+    height: 100px;
+
+    background-color: rgba(204, 161, 94, 1);
+    color: white;
+}
