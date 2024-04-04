@@ -6,6 +6,7 @@ body {
     background-color: rgba(25, 25, 25, 1);
 }
 
+/*Header section style*/
 header {
     width: 100vw;
     height: 150px;
@@ -32,15 +33,15 @@ header>div {
 
 #headerNav {
     margin-top: 30px;
-    margin-left: 5px;
+    margin-left: 85px;
 }
 
 header>div>nav>a {
     color: rgba(25, 25, 25, 1);
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 20px;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 5px 12px;
 
     border-radius: 5px;
 }
@@ -49,4 +50,11 @@ header>div>nav>a:hover {
     background-color: rgba(25, 25, 25, 1);
     color: rgba(204, 161, 94, 1);
     transition-duration: 1s;
+}
+
+/*Footer section styles*/
+footer {
+    width: 100vw;
+    height: 291px;
+    background-color: rgba(15, 15, 15, 1);
 }
