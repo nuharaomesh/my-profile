@@ -118,6 +118,8 @@ header>div>nav>a:hover {
     }
 }
 
+                                                                            /*section 1 style*/
+
 #section1-about {
     margin-top: -120px;
     margin-left: 340px;
@@ -128,7 +130,6 @@ header>div>nav>a:hover {
     font-weight: normal;
     color: rgba(254, 206, 132, 1);
 }
-                                                                            /*section 1 style*/
 
 #social-link {
     margin-left: 80px;
@@ -271,10 +272,127 @@ header>div>nav>a:hover {
 
                                                                       /*Section 2 style*/
 
-.section2 {
-    height: fit-content;
-    margin-top: 300px;
+#aboutMe {
+    font-size: 90px;
+    color: rgba(248, 239, 180, 1);
+    font-weight: bolder;
+    font-family: Inter, sans-serif;
+    margin-left: 500px;
+    margin-top: 170px;
 }
+
+#gold-border {
+    width: 1032px;
+    height: 534px;
+    border: 4px solid rgba(248, 239, 180, 1);
+    border-radius: 5px;
+    display: flex;
+    margin-left: 440px;
+}
+#x-line {
+    height: 630px;
+    width: 0;
+    border-radius: 4px;
+    border: 2px solid rgba(248, 239, 180, 1);
+    margin-top: -51px;
+    margin-left: -4px;
+}
+
+
+#y-line1 {
+    width: 50px;
+    height: 0;
+    border-radius: 4px;
+    border: 2px solid rgba(248, 239, 180, 1);
+    margin-top: -4px;
+    margin-left: -50px;
+}
+#y-line2 {
+    width: 50px;
+    height: 0;
+    border-radius: 4px;
+    border: 2px solid rgba(248, 239, 180, 1);
+    margin-left: 390px;
+    margin-top: -4px;
+}
+
+
+#about-img {
+    margin-top: 70px;
+    margin-left: -150px;
+}
+
+#gold-border>div>p {
+    color: rgba(255, 218, 161, 1);
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 80px;
+    font-family: monospace;
+}
+                                                                      /*Section 3 style*/
+
+#clr-vectors {
+    height: 900px;
+    margin-top: 800px;
+    position: relative;
+    top: 240px;
+}
+
+.tag-name {
+    /*border: 2px solid black;*/
+    width: 810px;
+    height: 2300px;
+    position: relative;
+    top: -1678px;
+    left: 580px;
+    color: rgb(29, 29, 29);
+}
+
+#section3 {
+    width: 100vw;
+    height: fit-content;
+}
+
+#section3>div>div>h1 {
+    font-family: Inter, sans-serif;
+    font-size: 135px;
+    font-weight: bolder;
+    position: relative;
+    top: 350px;
+}
+
+.tag-name>div {
+    height: 600px;
+    position: sticky;
+    top: 0;
+}
+
+#first-rec {
+    width: 100vw;
+    height: 1000px;
+    background-color: rgba(142, 97, 28, 1);
+    padding-top: 140px;
+    margin-top: -100px;
+    box-shadow: rgba(142, 97, 28, 1) 0 -18px 80px 94px;
+}
+
+#second-rec {
+    width: 100vw;
+    height: 700px;
+    background-color: rgba(200, 152, 82, 1);
+    padding-top: 120px;
+    box-shadow: rgb(200, 152, 82) 0 -18px 80px 94px;
+    overflow: hidden;
+}
+
+#third-rec {
+    width: 120vw;
+    height: 200px;
+    background-color: rgba(252, 227, 190, 1);
+    margin-top: 180px;
+    box-shadow: rgb(252, 227, 190) 0 -1px 130px 184px;
+}
+
 
                                                                       /*Footer section styles*/
 footer {
