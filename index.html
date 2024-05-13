@@ -13,16 +13,19 @@
     <link rel="stylesheet" href="assets/stylesheet/normalize.css">
     <link rel="stylesheet" href="assets/stylesheet/stylesheet.css">
     <link rel="stylesheet" href="assets/fontawesome-free-6.5.1-web/">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body>
     
     <!--Header-->
     <header>
         <!--Logo-->
-        <img src="/assets/logo/logo.png" title="omeshnuhara.com" alt="logo" id="home">
+        <img src="/assets/logo/logo.png" title="omeshnuhara.com" alt="logo" id="home" class="pointer-event-none">
 
         <div>
-            <img src="assets/logo/navVector2.png" width="760px">
+            <img src="assets/logo/navVector2.png" width="760px" class="pointer-event-none">
             <nav id="headerNav">
                 <a href="#home">Home</a>
                 <a href="#aboutMe">About me</a>
@@ -35,7 +38,7 @@
     </header>
 
     <!--intro-->
-    <section class="section1">
+    <section class="section1 pointer-event-none">
         <div class="circle">
             <div id="animated-circle"></div>
         </div>
@@ -44,7 +47,7 @@
                 <div id="gold-rec-border"></div>
                 <div class="intro-style">
                     <p>
-                        Hello, <span class="add-font-clr">I'm Omesh,</span>
+                        Hello, <span class="add-font-clr" >I'm Omesh,</span>
                     </p>
                     <p>
                         A passionate <span class="add-font-clr"> Web developer </span>
@@ -55,7 +58,7 @@
                 </div>
             </div>
             <div class="section1-right">
-                <div id="div1"></div>
+                <div id="div1" ></div>
                 <div id="div2"></div>
                 <div id="div3"></div>
                 <div class="img-pos"></div>
@@ -64,7 +67,7 @@
         </div>
 
         <div id="section1-about">
-            <p>
+            <p data-aos="fade-right">
                 " I'm 21-year-old software engineering student with a passion <br>
                 for exploring cutting-edge technologies. Excited about turning <br>
                 ideas into extraordinary digital experiences, <br>
@@ -94,7 +97,7 @@
     </section>
 
     <!--About me-->
-    <section class="section2">
+    <section class="section2 pointer-event-none">
 
         <div>
             <h1 id="aboutMe">About me</h1>
@@ -107,7 +110,8 @@
                 <img src="/assets/image/about%20me.png" title="goldenface.com" alt="goldFace">
             </div>
             <div>
-                <p>
+                <p data-aos="fade-up"
+                   data-aos-anchor-placement="bottom-bottom">
                     name: "Omesh Nuhara Liyanage", <br><br>
                     age: 22, <br><br>
                     location: { <br><br>
@@ -188,124 +192,172 @@
     </section>
 
     <!--Skills-->
-    <section>
-        <h1 id="skill">My Skills</h1>
-        <div>
+    <section id="section5" class="pointer-event-">
+        <div id="skill"></div>
+        <div id="skill-header-pos">
+            <h1 id="skill-header">My Skills</h1>
+        </div>
+
+        <div id="tools-sec">
             <label for="tools">Tech & Tools</label>
-            <ul id="tools">
+            <ul id="tools" class="list pos">
                 <li>Linux</li>
                 <li>Shell</li>
                 <li>Github</li>
-                <li>git</li>
+                <li>Git</li>
                 <li>Figma</li>
             </ul>
         </div>
 
-        <div>
-            <label for="frontLang">Front-end</label>
-            <ul id="frontLang">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Java</li>
-                <li>React</li>
-            </ul>
+        <div id="pr-lang-section">
+            <div>
+                <label for="frontLang">Front-end</label>
+                <ul id="frontLang" class="list pos">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Java</li>
+                    <li>React</li>
+                </ul>
+            </div>
+
+            <div id="back-lang-sec">
+                <label for="backLang">Back-end</label>
+                <ul id="backLang" class="list pos">
+                    <li>Mysql</li>
+                    <li>C#</li>
+                    <li>Php</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
         </div>
-        
-        <div>
-            <label for="backLang">Back-end</label>
-            <ul id="backLang">
-                <li>Mysql</li>
-                <li>C#</li>
-                <li>Php</li>
-                <li>MongoDB</li>
-            </ul>
+
+        <div id="straight-line">
+            <div class="gold-circ" id="gld-circ-position"></div>
+            <div class="gold-line2"></div>
+            <div class="gold-curve"></div>
+        </div>
+
+        <div id="under-line">
+            <div class="gold-dot"></div>
+            <div id="gold-line1" class="gold-line"></div>
+            <div class="gold-dot pos1"></div>
+            <div id="gold-line2" class="gold-line"></div>
+            <div class="gold-dot pos2"></div>
         </div>
     </section>
 
-    <!--Project-->
-    <section>
-        <div id="projects">
-            <h2>Project Megan</h2>
+    <!--Projects-->
+    <section id="section6">
+        <h1 id="projects">Latest project</h1>
 
-            <p>
-                PLorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua .
-            </p>
+        <div id="grid">
 
-            <img src="" title="projectMegan.com" alt="dashboard photo"><br>
+            <div id="project-1">
 
-            <label for="prjMgn">Technologies:</label>
-                <ul id="prjMgn">
-                    <li>Java</li>
-                    <li>MySql</li>
-                    <li>Javafx</li>
-                </ul>
+                <div>
+                    <h2>Project Megan</h2>
 
-            <button><a href="https://github.com/nuharaomesh/megan-project.git">Source code</a></button>
-        </div>
+                    <p>
+                        PLorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua .
+                    </p>
 
-        <div>
-            <img src="" title="chatApplication.com" alt="chat application photo">
+                    <div id="project-tech1">
+                        <label for="prjMgn">Technologies:</label>
+                        <ul id="prjMgn">
+                            <li>Java</li>
+                            <li>MySql</li>
+                            <li>Javafx</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button>Visit</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="" title="projectMegan.com" alt="dashboard photo"><br>
+                </div>
+            </div>
 
-            <h2>Chat application</h2>
+            <div id="project-2" class="prj-size">
 
-            <p>
-                Chat application Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+                <div>
+                    <img src="" title="chatApplication.com" alt="chat application photo">
+                </div>
 
-            <label for="chtApp">Technologies</label>
-                <ul id="chtApp">
-                    <li>Java</li>
-                    <li>Javafx</li>
-                </ul>
+                <div class="prj-details">
 
-            <button>Source code</button>
-        </div>
+                    <h2>Chat application</h2>
 
-        <div>
-            <img src="" title="imageReader.com" alt="image reader photo">
+                    <p>
+                        Chat application Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
 
-            <h2>Image reader</h2>
+                    <label for="chtApp">Technologies</label>
+                    <ul id="chtApp" class="used-tech">
+                        <li>Java</li>
+                        <li>Javafx</li>
+                    </ul>
 
-            <p>
-                Image reader is a Stand-alone application Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+                    <button id="prj1-btn">Source code</button>
+                </div>
+            </div>
 
-            <label for="imgRead">Technologies</label>
-            <ul id="imgRead">
-                <li>Python</li>
-            </ul>
+            <div id="project-3" class="prj-size">
 
-            <button>Source code</button>
-        </div>
+                <div>
+                    <img src="" title="imageReader.com" alt="image reader photo">
+                </div>
 
-        <div>
-            <img src="" title="prWeb.com" alt="PR web photo">
+                <div class="prj-details">
+                    <h2>Image reader</h2>
 
-            <h2>PR Web</h2>
+                    <p>
+                        Image reader is a Stand-alone application Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
 
-            <p>
-                PR Web is a Stand-alone application Lorem ipsum
-                dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+                    <label for="imgRead">Technologies</label>
+                    <ul id="imgRead" class="used-tech">
+                        <li>Python</li>
+                    </ul>
 
-            <label for="prWeb">Technologies</label>
-            <ul id="prWeb">
-                <li>JS</li>
-                <li>ORM</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
+                    <button id="prj2-btn">Source code</button>
+                </div>
+            </div>
 
-            <button>Source code</button>
+            <div id="project-4" class="prj-size">
+
+                <div>
+                    <img src="" title="prWeb.com" alt="PR web photo">
+                </div>
+
+                <div class="prj-details">
+                    <h2>PR Web</h2>
+
+                    <p>
+                        PR Web is a Stand-alone application Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+
+                    <label for="prWeb">Technologies</label>
+                    <ul id="prWeb" class="used-tech">
+                        <li>JS</li>
+                        <li>ORM</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+
+                    <button id="prj3-btn">Source code</button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -485,6 +537,9 @@
             </div>
         </div>
     </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/fontawesome-free-6.5.1-web/js/all.min.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>
