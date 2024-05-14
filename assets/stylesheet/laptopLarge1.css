@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: rgba(29, 29, 29, 1);
+    background-color: rgba(34, 34, 34, 1);
 }
 
 .pointer-event-none {
@@ -122,6 +122,12 @@ header>div>nav>a:hover::before {
 }
 
                                                                             /*section 1 style*/
+.section1 {
+    background-image: url("../image/blur-back.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1930px 1010px;
+}
 
 #section1-about {
     margin-top: -120px;
@@ -138,6 +144,7 @@ header>div>nav>a:hover::before {
     margin-left: 80px;
     margin-top: 80px;
 }
+
 #social-link>nav>ul {
     list-style-type: none;
     display: flex;
@@ -399,8 +406,8 @@ header>div>nav>a:hover::before {
     width: 100vw;
     height: 300px;
     border-radius: 100%;
-    background-color: rgba(29, 29, 29, 1);
-    box-shadow: rgb(29, 29, 29) 0 0 140px 380px;
+    background-color: rgba(34, 34, 34, 1);
+    box-shadow: rgba(34, 34, 34, 1) 0 0 140px 380px;
 }
 
 #circ-pos1 {
@@ -690,7 +697,7 @@ header>div>nav>a:hover::before {
     background-image: url("../image/blur-back.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto 1920px;
+    background-size: 1920px 1720px;
 }
 
 #section6> h1 {
@@ -925,6 +932,131 @@ header>div>nav>a:hover::before {
     align-items: center;
 }
 
+                                                                      /*Section 8 styles*/
+
+#section8 {
+    margin-top: 250px;
+    height: 1120px;
+}
+
+#section8> div:nth-last-of-type(2) {
+    display: flex;
+    margin-left: 220px;
+    margin-top: 160px;
+}
+
+#section8> h1 {
+    font-size: 96px;
+    font-family: fantasy;
+    color: rgba(254, 253, 254, 1);
+    margin-left: 570px;
+}
+
+#contact-sec-prt1 {
+    width: 690px;
+    color: white;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+
+#contact-sec-prt1> p:first-of-type {
+    font-size: 65px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+#contact-sec-prt1> p:nth-last-of-type(1) {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#contact-part {
+    width: 710px;
+    height: 410px;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.inputAndLabel {
+    margin-top: 30px;
+}
+
+.inputStyles {
+    border-radius: 10px;
+    background-color: rgba(34, 34, 34, 1);
+    border: 3px solid rgba(228, 188, 127, 1);
+    color: white;
+    font-weight: bolder;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+
+.inputAndLabel> label {
+    color: rgba(255, 255, 255, 1);
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#contact-part> div:first-of-type> div> input {
+    width: 319px;
+    height: 48px;
+}
+
+#contact-part> div:first-of-type> div:first-of-type> input {
+    margin-right: 22px;
+}
+
+#contact-part> div:first-of-type {
+    display: flex;
+}
+
+#contact-part> div:nth-last-of-type(2)> input {
+    width: 686px;
+    height: 48px;
+}
+
+#contact-part> div:nth-last-of-type(1)> textarea {
+    width: 686px;
+    height: 250px;
+}
+
+#contact-part> button {
+    width: 105px;
+    height: 40px;
+    background-color: rgba(228, 188, 127, 1);
+    color: rgba(55, 55, 55, 1);
+    border: 0;
+    font-weight: bolder;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-left: 607px;
+}
+
+.img1-pos {
+    position: relative;
+    top: -1171px;
+    left: -60px;
+}
+
+.img2-pos {
+    position: relative;
+    top: -600px;
+    left: 360px;
+}
+
+.img3-pos {
+    position: relative;
+    top: -150px;
+    left: 1400px;
+}
+
+.img4-pos {
+    position: relative;
+    top: -80px;
+    left: -450px;
+}
 
 
                                                                       /*Footer section styles*/
@@ -932,37 +1064,44 @@ header>div>nav>a:hover::before {
 
 footer {
     height: 320px;
-    clip-path: polygon(0 6%, 100% 14%, 100% 100%, 0% 100%);
-    background-color: rgba(29, 29, 29, 1);
+}
+
+.custom-opacity {
+    opacity: 0.5;
 }
 
 footer>div {
     width: 100vw;
     height: 291px;
     background-color: rgba(15, 15, 15, 1);
-    clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
 
     position: relative;
     bottom: -28px;
 }
 
 .custom-list>li>button {
+    width: 50px;
+    height: 50px;
     padding: 0;
     margin: 0;
     border: 0;
     background-color: rgba(15, 15, 15, 1);
 }
 
+.custom-list>li>button> span {
+    font-size: 23px;
+}
+
 .footer-text {
     text-align: center;
     color: white;
     position: relative;
-    bottom: -100px;
+    bottom: -150px;
 }
 
 footer>div>hr {
     position: relative;
-    top: 89px;
+    top: 139px;
 }
 
 .custom-list {
@@ -982,5 +1121,12 @@ footer>div>div>nav>ul>li>a {
     width: 500px;
     position: relative;
     left: 690px;
-    top: 80px;
+    top: 130px;
+}
+
+#logo-path {
+    width: 310px;
+    position: relative;
+    top: 100px;
+    left: 810px;
 }

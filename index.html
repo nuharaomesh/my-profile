@@ -137,7 +137,7 @@
             </div>
         </div>
         <div class="tag-name">
-            <div>
+            <div class="pointer-event-none">
                 <h1>What's going on ?</h1>
             </div>
         </div>
@@ -146,7 +146,7 @@
     </section>
 
     <!--Education details-->
-    <section id="section4">
+    <section id="section4" class="pointer-event-none">
 
         <div id="sec4-header">
             <h1>Where i evolved,</h1>
@@ -192,7 +192,7 @@
     </section>
 
     <!--Skills-->
-    <section id="section5" class="pointer-event-">
+    <section id="section5" class="pointer-event-none">
         <div id="skill"></div>
         <div id="skill-header-pos">
             <h1 id="skill-header">My Skills</h1>
@@ -529,26 +529,46 @@
     </section>
 
     <!--Forms-->
-    <section>
+    <section id="section8">
+
         <h1 id="contact">Interested in me ?</h1>
 
         <div>
-            <div>
-            <label for="name">Name:</label><br>
-            <input id="name" type="text" placeholder="Enter your name"><br>
+            <div id="contact-sec-prt1">
+                <p>Let's chat. <br> Tell me about your <br> project.</p>
+                <p>Let's create something together.</p>
             </div>
 
-            <div>
-            <label for="email">Email:</label><br>
-            <input id="email" type="email" placeholder="example@gmail.com"><br>
-            </div>
+            <div id="contact-part">
+                <div>
+                    <div class="inputAndLabel">
+                        <label for="firstName">First name</label><br>
+                        <input id="firstName" type="text" placeholder="Enter your first name" class="inputStyles"><br>
+                    </div>
+                    <div class="inputAndLabel">
+                        <label for="lastName">Last name</label><br>
+                        <input id="lastName" type="text" placeholder="Enter your last name" class="inputStyles"><br>
+                    </div>
+                </div>
 
-            <div>
-            <label for="msg">Message:</label><br>
-            <textarea id="msg" placeholder="message"></textarea><br>
+                <div class="inputAndLabel">
+                    <label for="email">Email address</label><br>
+                    <input id="email" type="email" placeholder="example@gmail.com" class="inputStyles"><br>
+                </div>
+
+                <div class="inputAndLabel">
+                    <label for="msg">Comments or Question</label><br>
+                    <textarea id="msg" placeholder="message" class="inputStyles"></textarea><br>
+                </div>
+                <button>Submit</button>
             </div>
         </div>
-        <button>Send</button>
+        <div>
+            <img src="assets/image/bole.png" alt="clr-bole" width="153" class="img1-pos">
+            <img src="assets/image/bole.png" alt="clr-bole" width="103" class="img2-pos">
+            <img src="assets/image/bole.png" alt="clr-bole" width="179" class="img3-pos">
+            <img src="assets/image/bole.png" alt="clr-bole" class="img4-pos">
+        </div>
     </section>
 
     <!--Footer-->
@@ -556,8 +576,8 @@
 
         <div>
             <!--Logos-->
-            <div>
-                <ul class="custom-list">
+            <div id="logo-path">
+                <ul class="custom-list custom-opacity">
                     <li>
                         <button>
                             <span><i class="fa-brands fa-linkedin size" style="color: #ffffff;"></i></span>
@@ -580,7 +600,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-nav">
+            <div class="footer-nav custom-opacity">
                 <nav>
                     <ul class="custom-list">
                         <li>
@@ -605,8 +625,8 @@
                     </ul>
                 </nav>
             </div>
-            <hr>
-            <div class="footer-text">
+            <hr class="custom-opacity">
+            <div class="footer-text custom-opacity">
                 © 2024 All rights reserved by Omesh nuhara
             </div>
         </div>
