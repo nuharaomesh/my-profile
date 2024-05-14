@@ -1,0 +1,80 @@
+body {
+    overflow: hidden;
+    background-color: #bcbcbc;
+}
+
+section {
+    width: 900px;
+    height: 210px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.clr-box {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+section> .middle-clr-box> div {
+    margin-left: 20px;
+}
+
+section> .clr-box:nth-last-of-type(3) {
+    background-color: red;
+}
+
+div> .clr-box:nth-last-of-type(4) {
+    background-color: orange;
+}
+
+div> .clr-box:nth-last-of-type(3) {
+    background-color: yellow;
+}
+
+div> .clr-box:nth-last-of-type(2) {
+    background-color: green;
+}
+
+div> .clr-box:nth-last-of-type(1) {
+    background-color: blue;
+}
+
+section> .clr-box:nth-last-of-type(1) {
+    position: relative;
+    left: calc(100% - 100px);
+    background-color: purple;
+}
+
+.middle-clr-box {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+button {
+    width: 70px;
+    height: 40px;
+    background-color: #2cde04;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+#btnStart {
+    position: relative;
+    top: 440px;
+    left: 1600px;
+}
+
+.btnClr {
+    background-color: red;
+}

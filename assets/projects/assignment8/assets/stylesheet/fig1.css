@@ -1,0 +1,60 @@
+section {
+    width: 100vw;
+    height: 300px;
+    box-sizing: border-box;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+section> div {
+    border-radius: 5px;
+    height: 400px;
+}
+
+.walking-man {
+    width: 12vw;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+
+    background-image: url("../image/animated-winter-days-walking-xizdn42xi95y262e.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.house {
+    width: 20vw;
+
+    background-image: url("../image/glazy-country-house.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button {
+    width: 70px;
+    height: 40px;
+    background-color: #2cde04;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+#startBtn {
+    position: relative;
+    top: 190px;
+    left: 1730px;
+}
+
+.btnClr {
+    background-color: red;
+}

@@ -1,0 +1,64 @@
+section {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+
+    background-image: url("../image/KITT-DOMUS-SUPERCAR-2.jpg.foto.rbig.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#box-set {
+    height: 40px;
+    width: 350px;
+    display: flex;
+
+    position: absolute;
+    top: 110px;
+    right: 0;
+    bottom: 0;
+    left: -6px;
+    margin: auto;
+    background-color: black;
+}
+
+button {
+    width: 70px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-color: #0ace0a;
+    border: 2px solid white;
+
+    font-family: sans-serif, Inter;
+    font-weight: bolder;
+    color: white;
+
+    position: relative;
+    top: 200px;
+    left: 1630px;
+}
+
+button:hover {
+    margin-top: -2px;
+    transition-duration: 0.2s;
+
+}
+
+section>div>div {
+    width: 44px;
+    height: 40px;
+    border: 2px solid white;
+}
+
+.lightOn1 {
+    background-color: #FF0000FF;
+}
+
+.lightOn2 {
+    background-color: #FF000094;
+}
+
+.lightOn3 {
+    background-color: #FF00005F;
+}

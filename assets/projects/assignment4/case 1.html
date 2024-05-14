@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+
+        section {
+            margin-top: 100px;
+        }
+
+        section>div {
+            width: 350px;
+            height: 80px;
+            border-radius: 10px;
+            margin-top: 30px;
+
+            background-color: rebeccapurple;
+            color: white;
+
+            position: relative;
+            margin-left: -290px;
+            transition-duration: 2s;
+        }
+
+        section>div>h3 {
+            height: fit-content;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+
+            margin: auto;
+        }
+
+        section>div>div {
+            height: fit-content;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 20px;
+            margin: auto;
+        }
+
+        div:hover {
+            margin-left: 0;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h3>Menu one</h3>
+            <div><i class="fa-regular fa-user"></i></div>
+        </div>
+        <div>
+            <h3>Menu Two</h3>
+            <div><i class="fa-solid fa-envelope"></i></div>
+        </div>
+        <div>
+            <h3>Menu Three</h3>
+            <div><i class="fa-solid fa-location-dot"></i></div>
+        </div>
+        <div>
+            <h3>Menu four</h3>
+            <div><i class="fa-solid fa-calendar-days"></i></div>
+        </div>
+        <div>
+            <h3>Menu five</h3>
+            <div><i class="fa-brands fa-docker"></i></div>
+        </div>
+    </section>
+
+    <script src="../../fontawesome-free-6.5.1-web/js/all.min.js"></script>
+</body>
+</html>

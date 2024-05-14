@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 06</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+
+        body {
+            overflow: hidden;
+        }
+        main {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("assets/Car_Animation_Img/sky.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #city {
+            width: 400vw;
+            display: flex;
+            position: absolute;
+            margin-top: -800px;
+
+            animation-name: roadBuilding;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        .city {
+            width: 100vw;
+            height: 400px;
+
+            background-image: url("assets/Car_Animation_Img/city.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .road {
+            width: 100vw;
+            height: 400px;
+
+            background-image: url("assets/Car_Animation_Img/road.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #road {
+            width: 400vw;
+            display: flex;
+            position: absolute;
+            margin-top: -400px;
+
+            animation-name: roadBuilding;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        #car {
+            position: absolute;
+
+            margin-top: -390px;
+            margin-left: 750px;
+        }
+
+        .car {
+            width: 400px;
+            height: 150px;
+
+            background-image: url("assets/Car_Animation_Img/car.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tires {
+            width: 70px;
+            aspect-ratio: 1/1;
+
+            background-image: url("assets/Car_Animation_Img/wheel.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            animation-name: tires;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        #tire1 {
+            position: absolute;
+            top: 85px;
+            bottom: 0;
+            right: 258px;
+            left: 0;
+
+            margin: auto;
+        }
+
+        #tire2 {
+            position: absolute;
+            top: 85px;
+            bottom: 0;
+            right: -232px;
+            left: 0;
+
+            margin: auto;
+        }
+
+        @keyframes roadBuilding {
+            from {
+                transform: translateX(-10px);
+            }
+
+            to {
+                transform: translateX(calc(-400vw - -100vw));
+            }
+        }
+
+        @keyframes tires {
+
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(5000deg);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <main></main>
+    <section id="city">
+        <div class="city"></div>
+        <div class="city"></div>
+        <div class="city"></div>
+        <div class="city"></div>
+    </section>
+    <section id="road">
+        <div class="road"></div>
+        <div class="road"></div>
+        <div class="road"></div>
+        <div class="road"></div>
+    </section>
+    <section id="car">
+        <div class="car"></div>
+        <div class="tires" id="tire1"></div>
+        <div class="tires" id="tire2"></div>
+    </section>
+
+</body>
+</html>

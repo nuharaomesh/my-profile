@@ -34,6 +34,7 @@ header>div {
 
     overflow: hidden;
     height: 180px;
+    z-index: 1;
 }
 
 #headerNav {
@@ -894,28 +895,30 @@ header>div>nav>a:hover::before {
     border: 3px solid white;
 }
 
-.asm-style :nth-last-of-type(2) {
+.asm-style> div:nth-last-of-type(2) {
     padding: 10px 20px;
     background-color: white;
     border-radius: 10px 10px 0 0;
     height: 300px;
-    pointer-events: none;
 }
 
-.asm-style :nth-last-of-type(2)> h1 {
+.asm-links>ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.asm-style>div:nth-last-of-type(2)> h1 {
     margin-top: 20px;
-}
-
-.asm-style :nth-last-of-type(2)> p {
-    margin-top: 30px;
-}
-
-.asm-style> div> h1 {
     font-size: 20px;
     font-weight: bolder;
 }
 
-.asm-style> div:nth-last-of-type(1)> button {
+.asm-details> p {
+    margin-top: 30px;
+}
+
+.asm-style>div:nth-last-of-type(1)> button {
     background-color: white;
     border: 0;
     padding: 5px 13px;
@@ -925,12 +928,53 @@ header>div>nav>a:hover::before {
     color: rgba(23, 23, 24, 0.9);
 }
 
-.asm-style> div:nth-last-of-type(1) {
+.asm-style>div:nth-last-of-type(1) {
     height: 66px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.asm-style {
+    width: calc(100%);
+    height: calc(100%);
+    margin-top: 0;
+    margin-left: 0;
+    transition-duration: 200ms;
+}
+
+.asm-links>ul>li {
+    margin-top: 10px;
+}
+
+.asm-links>ul>li>button {
+    border: 0;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.asm-style:hover {
+    animation-name: amsAnime;
+    animation-duration: 200ms;
+    animation-fill-mode: forwards;
+    box-shadow: rgb(255, 255, 255) 0 1px 40px -10px;
+}
+
+@keyframes amsAnime {
+    from {
+        width: calc(100%);
+        height: calc(100%);
+        margin-top: 0;
+        margin-left: 0;
+    }
+    to {
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+}
+
 
                                                                       /*Section 8 styles*/
 
