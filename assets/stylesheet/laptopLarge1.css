@@ -6,9 +6,9 @@ body {
     background-color: rgba(34, 34, 34, 1);
 }
 
-.pointer-event-none {
+/*.pointer-event-none {
     pointer-events: none;
-}
+}*/
                                                                    /*Header section style*/
 header {
     width: 100vw;
@@ -356,7 +356,7 @@ header>div>nav>a:hover::before {
     position: relative;
     top: -1678px;
     left: 580px;
-    color: rgb(29, 29, 29);
+    color: rgba(34, 34, 34, 1);
 }
 
 #section3 {
