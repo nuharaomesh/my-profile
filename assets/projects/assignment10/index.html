@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/stylesheets/calcStylesheet.css">
+    <link rel="stylesheet" href="assets/stylesheets/normalize.css">
+
+</head>
+<body>
+
+    <div id="cal">
+        <div id="interface-section">
+            <label id="math" for="value">0</label>
+            <br>
+            <input type="text" id="value" class="custom_font_style" placeholder="0" readonly>
+        </div>
+        <div id="key-section">
+            <div class="grid-container">
+                <button onclick="clearAll()" type="button" class="top-btn">AC</button>
+                <button onclick="clear()" type="button" class="top-btn">C</button>
+                <button onclick="showToDisplay('/')" type="button" class="top-btn">/</button>
+                <button onclick="solve()" type="button" class="top-btn">=</button>
+                <button onclick="showToDisplay('7')" type="button">7</button>
+                <button onclick="showToDisplay('8')" type="button">8</button>
+                <button onclick="showToDisplay('9')" type="button">9</button>
+                <button onclick="showToDisplay('*')" type="button">*</button>
+                <button onclick="showToDisplay('4')" type="button">4</button>
+                <button onclick="showToDisplay('5')" type="button">5</button>
+                <button onclick="showToDisplay('6')" type="button">6</button>
+                <button onclick="showToDisplay('-')" type="button">-</button>
+                <button onclick="showToDisplay('1')" type="button">1</button>
+                <button onclick="showToDisplay('2')" type="button">2</button>
+                <button onclick="showToDisplay('3')" type="button">3</button>
+                <button onclick="showToDisplay('+')" type="button">+</button>
+                <button onclick="showToDisplay('0')" type="button">0</button>
+                <button onclick="showToDisplay('00')" type="button">00</button>
+                <button onclick="showToDisplay('.')" type="button">.</button>
+            </div>
+        </div>
+    </div>
+
+<script src="assets/js/mainFunc.js"></script>
+</body>
+</html>

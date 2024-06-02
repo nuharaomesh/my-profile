@@ -1,0 +1,150 @@
+:root {
+    --calc-width: 480px;
+    --calc-height: 850px;
+
+    --interface-height: 250px;
+
+    --dark-grey: rgba(14, 14, 14, 1);
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgba(30, 30, 30, 1);
+}
+
+#cal {
+    width: var(--calc-width);
+    height: var(--calc-height);
+
+    border-radius: 20px;
+
+    background-color: var(--dark-grey);
+    box-shadow: 8px 8px 10px 0 rgba(104, 104, 104, 0.25) inset, -10px -10px 11px rgba(0, 0, 0, 0.51) inset;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+#interface-section {
+    width: 95%;
+    height: var(--interface-height);
+
+    border-radius: 10px;
+
+    box-shadow: 6px 6px 4px 0 rgba(0, 0, 0, 0.51) inset, -4px -4px 4px rgba(104, 104, 104, 0.25) inset;
+
+    position: relative;
+    top: 12px;
+    left: 12px;
+}
+
+#key-section {
+    width: auto;
+    height: calc(var(--calc-height) - var(--interface-height));
+    display: flex;
+
+    /*border: 2px solid green;*/
+}
+
+.grid-container {
+    width: 430px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 35px 35px;
+
+    position: relative;
+    top: -10%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+button {
+    width: 80px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    border: 0;
+
+    color: white;
+    font-weight: bolder;
+
+    background-color: var(--dark-grey);
+    box-shadow: -3px -3px 5px rgba(104, 104, 104, 0.25), 3px 3px 6px rgba(0, 0, 0, 0.51);
+}
+
+button:hover {
+    background-color: rgba(12, 12, 12, 1);
+}
+
+button:active {
+    color: rgba(85, 85, 85, 1);
+    background-color: rgb(5, 5, 5);
+    box-shadow: 6px 6px 4px 0 rgba(0, 0, 0, 0.51) inset, -4px -4px 4px rgba(104, 104, 104, 0.25) inset;
+}
+
+button:nth-last-of-type(4) {
+    height: 100%;
+    grid-column: 4/5;
+    grid-row: 4/6;
+}
+
+.top-btn {
+    height: 50px;
+}
+
+#number-field {
+    width: 450px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: var(--dark-grey);
+    position: relative;
+    top: 40%;
+    left: 2.4%;
+}
+
+label {
+    color: white;
+    position: relative;
+    top: 95px;
+    left: 420px;
+    font-size: 30px;;
+    font-weight: bolder;
+    text-align: right;
+}
+
+input {
+    width: 425px;
+    height: 75px;
+
+    position: relative;
+    top: 45%;
+    left: 3%;
+
+    border: 0;
+    color: white;
+    background-color: var(--dark-grey);
+}
+
+.custom_font_style {
+    text-align: right;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.low_size {
+    font-size: 40px;
+}
+
+input:focus {
+    outline: none;
+}
+
