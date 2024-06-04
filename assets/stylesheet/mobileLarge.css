@@ -8,9 +8,9 @@
         background-color: rgba(34, 34, 34, 1);
     }
 
-    /*.pointer-event-none {
-        pointer-events: none;
-    }*/
+    .pointer-event-none {
+
+    }
 
     /*Header section style*/
     header {
